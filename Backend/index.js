@@ -28,6 +28,9 @@ app.use(morgan("tiny"));
 app.use(helmet());
 app.use(compression());
 
+app.get("/", function(req, res) {
+  res.send("DoneWithIt server is running...");
+});
 app.use("/api/categories", categoriesRouter);
 app.use("/api/listing", listingRouter);
 app.use("/api/listings", listingsRouter);
