@@ -4,12 +4,12 @@ const defaultConfig = {
   };
   
   const developmentConfig = {
-    assetsBaseUrl: "http://192.168.88.251:9000/assets/",
+    assetsBaseUrl: "https://donewithit-4ok8.onrender.com/assets/",
     port: 9000
   };
   
   const productionConfig = {
-    assetsBaseUrl: "https://moshbucket1.s3.us-east-2.amazonaws.com/"
+    assetsBaseUrl: "https://donewithit-4ok8.onrender.com/"
   };
   
   export { defaultConfig, developmentConfig, productionConfig };
