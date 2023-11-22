@@ -1,10 +1,16 @@
-// config/default.json
-import defaultConfig from './default.json' assert { type: 'json' };
-
-// config/development.json
-import developmentConfig from './development.json' assert { type: 'json' };
-
-// config/production.json
-import productionConfig from './production.json' assert { type: 'json' };
-
-export { defaultConfig, developmentConfig, productionConfig };
+const defaultConfig = {
+    delay: 1000,
+    maxImageCount: 3
+  };
+  
+  const developmentConfig = {
+    assetsBaseUrl: "http://192.168.88.251:9000/assets/",
+    port: 9000
+  };
+  
+  const productionConfig = {
+    assetsBaseUrl: "https://moshbucket1.s3.us-east-2.amazonaws.com/"
+  };
+  
+  export { defaultConfig, developmentConfig, productionConfig };
+  
