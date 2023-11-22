@@ -15,7 +15,6 @@ import myRouter from "./routes/my.js";
 import expoPushTokensRouter from "./routes/expoPushTokens.js";
 import messagesRouter from "./routes/messages.js";
 import {developmentConfig} from "./config/index.js"
-import multer from "multer";
 
 
 const app = express();
